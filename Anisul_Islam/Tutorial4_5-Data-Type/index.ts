@@ -85,3 +85,35 @@ enum User {
   name = "anisul",
 }
 const htgEnum: User = User.id;
+
+//  15. Object -
+let person: object = { name: "Antor", age: 20 };
+
+let user: {
+  name: string;
+  age: number;
+};
+
+user = {
+  name: "Tolha",
+  age: 21,
+};
+
+//  16. Custom Type -
+type UserArr = { userName: string; userId: number };
+
+let usersArr: UserArr[];
+usersArr = [{ userName: "Antor", userId: 101 }];
+
+let userArr2: UserArr;
+userArr2 = { userName: "Abir", userId: 102 };
+usersArr.push(userArr2);
+
+type RequestType = "GET" | "POST";
+let getRequest: RequestType;
+getRequest = "GET";
+
+function requestHandler(requestType: RequestType) {
+  console.log(requestType);
+}
+requestHandler("POST");
