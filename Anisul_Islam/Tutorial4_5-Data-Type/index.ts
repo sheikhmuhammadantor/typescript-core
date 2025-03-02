@@ -52,3 +52,36 @@ users = ["antor", "tolha", "abir"];
 //  12. Multi-Types Array
 let users2: (number | string)[];
 users2 = [16, "antor", 28, "sheikh"];
+
+//  13. Tuple -
+let employee: [string, number] = ["John Doe", 30];
+
+let users3: [number, String];
+users3 = [101, "anis"];
+
+users3.push(102, "sakib");
+console.log(users3); //  [ 101, 'anis', 102, 'sakib' ]
+
+//  14. Enum -
+// Numeric Enum:
+enum Color {
+  Red,
+  Green,
+  Blue,
+}
+let numEnum: Color = Color.Red;
+
+// String Enum:
+enum UserRequest {
+  ReadData = "READ_DATA",
+  SaveData = "SAVE_DATA",
+  UpdateData = "UPDATE_DATA",
+}
+const strEnum: UserRequest = UserRequest["UpdateData"];
+
+// Heterogeneous Enum:
+enum User {
+  id = 101,
+  name = "anisul",
+}
+const htgEnum: User = User.id;
