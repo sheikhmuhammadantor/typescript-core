@@ -13,7 +13,7 @@ let age: number = 25;
 let price: number = 9.99;
 
 //  3. String -
-let userName: string = "John";
+let userName2: string = "John";
 
 //  4. Boolean -
 let isDone: boolean = false;
